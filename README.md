@@ -9,7 +9,7 @@ COLLECTION OF CODE ASSIGNMENTS FROM SECTION
 ``` 
                                                
 
-Before uploading your source code, before you put documentation comments on top of your source code such as:
+Before uploading your source code, you put documentation comments on top of your source code such as:
 
 ```
 /**
