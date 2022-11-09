@@ -1,0 +1,52 @@
+/**
+* Name: Kieth Marie Cabajar
+* Section:  Altruism
+* Year: 4th
+*/
+
+
+
+
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+
+
+   int a, b=0, c=0;
+   char g;
+		Scanner input = new Scanner(System.in);
+		
+      while (true){
+		    System.out.println("\nEnter a Grade? ");
+		System.out.println("Yes (Y) or No(N)");
+		g = input.next().charAt(0);
+		
+		
+		        if ((g == 'y') || (g == 'Y')){
+		        System.out.print("Please Enter Grade: ");
+		         a = input.nextInt();
+	  	       b += a;
+		         c++;
+		          }
+		      
+		       
+		          else if ((g == 'n') || (g == 'N')) {
+	              System.out.printf("Avarage of Grades " +(b/c) );
+	       	    break;
+	           	}
+	       	
+	           	else {
+	       	    System.out.print("Choose only Y or N Only \n");
+	       	    
+	                }
+	       	
+		      
+           }
+		
+	
+		
+		
+		
+		
+	}
+}
