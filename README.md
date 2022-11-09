@@ -1,6 +1,5 @@
 # ALTRUISM
-students code assignments of
-     
+COLLECTION OF CODE ASSIGNMENTS FROM SECTION     
 ```
      /\   | | |__   __|  __ \| |  | |_   _|/ ____|  \/  |
     /  \  | |    | |  | |__) | |  | | | | | (___ | \  / |
