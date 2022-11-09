@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int input;
+        Scanner myScan = new Scanner(System.in);
+        
+        System.out.print("Enter the grades: ");
+        float firstGrade = myScan.nextFloat();
+        
+        System.out.print("Enter the grades: ");
+        float secondGrade = myScan.nextFloat();
+        
+        float sum = firstGrade + secondGrade;
+        float ave = sum/2f;
+        
+        System.out.println("Do you want to continue?");
+        
+        System.out.println(" Press 1 for Yes");
+        System.out.println(" Press 2 for No");
+         input = myScan.nextInt();
+         
+         switch (input) {
+         
+             case 1: 
+             System.out.println("You choose YES");
+             while (input==1) {
+                 System.out.print("Enter the  grade: ");
+                 float myGrade= myScan.nextFloat();
+             }
+             break;
+             
+             case 2:
+             System.out.println("You choose NO");
+             
+             System.out.printf("Your average is " + ave);
+             break;
+             
+             default: 
+             System.out.println("You should make decision (1 for Yes or 2 for No)");
+         }
+    }
+} 
