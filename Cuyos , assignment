@@ -1,0 +1,52 @@
+/**
+* Name: cuyos,noreen
+* Section: IT Dept
+* Year: 4nd Year
+*/
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		
+		int input;
+		Scanner cuyos = new Scanner(System.in);
+		
+		System.out.print("Grades you want: ");
+		float firstGrade = cuyos.nextFloat();
+		
+		System.out.print("Enter a grade: ");
+		float secondGrade = cuyos.nextFloat();
+		
+		float sum = firstGrade + secondGrade;
+		float ave = sum/2f;
+		
+		System.out.println("Are you sure you want to add your grades?");
+		
+		System.out.println(" Enter 1 for Yes");
+		System.out.println("Enter 2 for No");
+		 input = cuyos.nextInt();
+		 
+		 switch (input) {
+		 	
+		 	case 1: 
+		 	System.out.println("Choose YES");
+		 	while (input==1) {
+		 		System.out.print("Enter grade: ");
+		 		float yourGrade= cuyos.nextFloat();
+		 	}
+		 	break;
+		 	
+		 	case 2:
+		 	System.out.println("You choose NO");
+		 	
+		 	System.out.printf("Your averageis " + ave);
+		 	break;
+		 	
+		 	default: 
+		 	System.out.println("Are you sure (1 for Yes or 2 for No)");
+		 	
+		 }
+		
+		
+	}
+}
