@@ -1,0 +1,31 @@
+/**
+* Name: Sherlyn G. Atubang
+* Section: IT Dept
+* Year: 4th Year
+*/
+import java. util.*;
+
+public class Main{
+
+public static void main(string []args)
+{
+Scanner scan= new Scanner (system. in); 
+int grade=0, choice, i=0;
+double total=0;
+do {
+System.out.println(" 1 - YES / 0- NO ");
+
+System.out.println("DO YOU WANT TO PROCEED? ");
+
+if (choice==1) {
+System. out. println("ENTER A GRADE:" );
+grade = scan. nextInt();
+total += grade;
+i++;
+}
+} while (choice==1);
+total = total / i;
+System.out.println ("Total average: "+ total);
+
+}
+}
