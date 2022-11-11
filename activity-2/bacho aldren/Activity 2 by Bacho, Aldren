@@ -1,0 +1,199 @@
+/**
+* Name: Aldren F. Bacho
+* Section: Altruism
+* Year: 4th Year
+*/
+
+
+import java.util.*;
+public class Main {       
+
+ static void list(){
+      System.out.println("\n           List of Menu                     \n===================================");
+        System.out.println("Food:                                                     ");
+        System.out.println("1. Fried Chicken ====== Php. 45.00 ");
+        System.out.println("2. Lumpia ============= Php. 8.00   ");
+        System.out.println("3. Hotdog ============= Php. 15.00  ");
+        System.out.println("Snacks:                                                    ");
+        System.out.println("1. Piatos ============= Php. 30.00   ");
+        System.out.println("2. Chippy ============= Php. 25.00   ");
+        System.out.println("3. Oishi ============== Php. 25.00 ") ;
+        System.out.println("Beverage                                                   ");
+        System.out.println("1. Emperador ========== Php. 120.00");
+        System.out.println("2. Redhorse =========== Php. 120.00");
+        System.out.println("3. Coke 1L ============ Php. 70.00 \n");
+      }    
+
+
+  public static void main(String[] args){   
+   Scanner console = new Scanner (System.in);     
+    int  q1=0, q2=0, q3=0, q4=0, q5=0, q6=0, q7=0, q8=0, q9=0, i=0, m=0;
+    double item= 0, t1=0, t2=0, t3=0, t4=0, t5=0, t6=0, t7=0, t8=0, t9=0;
+    String[] food = new String[]{"","",""};
+    String[] snacks = new String[]{"","",""};
+    String[] beverage = new String[]{"","",""};
+    
+    System.out.println("<=== WELCOME TO SMALL STORE ===>\n");
+    System.out.print("\nWould you like to order? (Yes or NO): ");  
+    char choice= console.next().charAt(0);  
+    
+    while(true){
+       if((choice == 'y')||(choice == 'Y')){ 
+       System.out.println(" ");
+       list();
+      System.out.println("\nInput menu choices:\n1-Foods, 2-Snacks, 3-Beverages"); 
+      System.out.print("Choose (1 - 3): ");
+      int n = console.nextInt();
+        
+        String category =" ";
+        switch(n){
+        case 1: 
+            category = "FOOD";
+        break;
+        case 2:
+        category = "SNACKS"; 
+        break;
+        case 3:
+        category = "BEVERAGES";
+        break;
+        default: 
+        System.out.print("select from above list!");
+        break;
+        }           
+         
+           if(category.equals("FOOD")){
+           System.out.print("\nYou Selected  Foods\nChoose from menu\nSelect 1 - 3 :  ");
+            m = console.nextInt();
+           System.out.print("Quantity: ");
+           i = console.nextInt();
+           
+              switch(m){           
+              case 1:
+              q1 += i;
+              item = 45;
+              t1 = item*q1;  
+              food[0] = ("\nFried\nChicken\t----"+q1+"------------"+t1);
+              break;
+              case 2:
+              q2 += i;
+              item = 8; 
+              t2= item*q2;
+              food[1] = ("\nLumpia\t----"+q2+"------------"+t2);
+              break;
+              case 3:
+              q3 += i;
+              item = 15;  
+              t3= item*q3;  
+              food[2] = ("\nHotdog\t----"+q3+"------------"+t3);
+              
+              break;
+              
+              default:
+              System.out.print("Select above list only!");  
+              break;
+              }
+           }
+          
+            if(category.equals("SNACKS")){
+           System.out.print("\nYou Selected  Snacks\nChoose from menu\nSelect 1 - 3 :  ");
+            m = console.nextInt();
+           System.out.print("Quantity: ");
+           i = console.nextInt();
+           
+              switch(m){           
+              case 1:
+              q4 += i;
+              item = 30;
+              t4 = item*q4;  
+              snacks[0] = ("\nPiatos\t----"+q4+"------------"+t4);
+              
+              break;
+              case 2:
+              q5 += i;
+              item = 25; 
+              t5= item*q5;
+              snacks[1] = ("\nChippy\t----"+q5+"------------"+t5);
+              break;
+              case 3:
+              q6 += i;
+              item = 25;  
+              t6= item*q6;  
+              snacks[2] = ("\nOishi\t----"+q6+"------------"+t6);
+              break;
+              
+              default:
+              System.out.print("Select above list only!");  
+              break;
+              }
+           }
+           
+          if(category.equals("BEVERAGES")){
+           System.out.print("\nYou Selected  Beverages\nChoose from menu\nSelect 1 - 3 :  ");
+            m = console.nextInt();
+           System.out.print("Quantity: ");
+           i = console.nextInt();
+           
+              switch(m){           
+              case 1:
+              q7 += i;
+              item = 120;
+              t7 = item*q7;  
+              beverage[0] = ("\nEmperador---"+q7+"-----------"+t7);
+              
+             
+              break;
+              case 2:
+              q8 += i;
+              item = 120; 
+              t8= item*q8;
+              beverage[1] = ("\nRedhorse----"+q8+"------------"+t8);
+              
+              
+              break;
+              case 3:
+              q9 += i;
+              item = 70;  
+              t9= item*q9;  
+              beverage[2] = ("\nCoke 1L\t----"+q9+"------------"+t9);
+              
+              
+              break;
+              
+              default:
+              System.out.print("Select above list only!");  
+              break;
+              }
+            } 
+              System.out.print("Would you like to order Again? Y/N :  ");
+              choice= console.next().charAt(0);
+       }
+              
+         
+        
+   else if((choice=='n')||(choice=='N')){
+        System.out.println("\n_________________________________");
+        System.out.print("\nItem\t Quantity\t Total");
+        System.out.println("\n_________________________________\n");
+	    System.out.println(food[0]);
+        System.out.println(food[1]);
+        System.out.println(food[2]);
+        System.out.println(snacks[0]);
+        System.out.println(snacks[1]);
+        System.out.println(snacks[2]);
+        System.out.println(beverage[0]);
+        System.out.println(beverage[1]);
+        System.out.println(beverage[2]);
+	     
+        
+        System.out
+	       .println("\n_________________________________\n");
+        System.out.print("Bill======================="+(t1+t2+t3+t4+t5+t6+t7+t8+t9)+"\n_________________________________\n   THANK YOU AND COME AGAIN!\n_________________________________");    
+        break;
+        
+    }else{ System.out.print("Wrong Selection");
+    break;
+    }
+       
+  }
+ }
+}
