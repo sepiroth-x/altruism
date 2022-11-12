@@ -1,0 +1,110 @@
+mport java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner algaba=new Scanner(System.in);
+		int total=0,item;
+		System.out.println("DO YOU WANT TO TAKE AN ORDER?\n[1]YES    [2]NO");
+		int i=algaba.nextInt();
+		while(i==1){
+		    System.out.println("SELECT THE CATEGORIES BELOW:");
+		    System.out.println("[1]FOODS\n[2]SNACKS\n[3]BEVERAGES");
+		    int ctgry=algaba.nextInt();
+		    
+		    if(ctgry==1){
+		        System.out.println("-- SELECT FOODS--");
+		        //FOOD CHOICES//
+		       System.out.println("[1]CRAB:$150");
+		       System.out.println("[2]FISH: $20");
+		       System.out.println("[3]HAM: $5");
+		       System.out.println("[4]FRIED CHICKEN: $25");
+		       System.out.println("[5]BACON: $25");
+		       
+		        System.out.println("ENTER ITEM:");
+		        item=algaba.nextInt();
+		        //FOOD PRICES//
+		        if (item==1){
+		            System.out.println("YOU SELECTED 1pc CRAB");
+		            total=total+150;
+		            }else if (item==2){
+		            System.out.println("YOU SELECTED 1pc FISH");
+		            total=total+20;
+		            }else if (item==3){
+		            System.out.println("YOU SELECTED 1pc HAM");
+		            total=total+5;
+		            }else if (item==1){
+		            System.out.println("YOU SELECTED 1pc FRIED CHICKEN");
+		            total=total+25;
+		            }else if (item==5){
+		            System.out.println("YOU SELECTED 1pc BACON");
+		            total=total+25;
+		            }else{
+		                System.out.println("INVALID KEY");
+		            }
+		        
+		    }else if(ctgry==2){
+		        System.out.println("--SELECT SNACKS--");
+		        //SNACKS CHOICES//
+		       System.out.println("[1]KITKAT: $75");
+		       System.out.println("[2]VCUT: $35");
+		       System.out.println("[3]PRINGLES: $105");
+		       System.out.println("[4]TEMPURA: $50");
+		       System.out.println("[5]ORANGE: $20");
+		        //SNACKS PRICES//
+		        System.out.println("ENTER ITEM:");
+		        item=algaba.nextInt();
+		        if (item==1){
+		            System.out.println("YOU SELECTED 1pc KITKAT");
+		            total=total+75;
+		            }else if (item==2){
+		            System.out.println("YOU SELECTED 1pc VCUT");
+		            total=total+35;
+		            }else if (item==3){
+		            System.out.println("YOU SELECTED 1pc PRINGLES");
+		            total=total+105;
+		            }else if (item==4){
+		            System.out.println("YOU SELECTED 1pc TEMPURA");
+		            total=total+50;
+		            }else if (item==5){
+		            System.out.println("YOU SELECTED 1pc ORANGE");
+		            total=total+20;
+		            }else{
+		                System.out.println("INVALID KEY");
+		            }
+		    }else if(ctgry==3){
+		        System.out.println("--SELECT BEVERAGES--");
+		        //BEVERAGE CHOICES//
+		       System.out.println("[1]LEMON TEA: $50");
+		       System.out.println("[2]REDHORSE: $150");
+		       System.out.println("[3] WATER: $20");
+		       System.out.println("[4] SOFTDRINKS: $20");
+		       System.out.println("[5]WINe: $150");
+		       //BEVERAGE PRICES//
+		       System.out.println("ENTER ITEM:");
+		        item=algaba.nextInt();
+		        if (item==1){
+		            System.out.println("YOU SELECTED 1pc LEMON TEA");
+		            total=total+50;
+		            }else if (item==2){
+		            System.out.println("YOU SELECTED 1pc REDHORSE");
+		            total=total+150;
+		            }else if (item==3){
+		            System.out.println("YOU SELECTED 1pc WATER");
+		            total=total+20;
+		            }else if (item==4){
+		            System.out.println("YOU SELECTED 1pc SOFTDRINKS");
+		            total=total+20;
+		            }else if (item==5){
+		            System.out.println("YOU SELECTED 1pc WINE");
+		            total=total+150;
+		            }else{
+		                System.out.println("INVALID KEY");
+		            }
+		    }else{
+		        System.out.println("INVALID KEY.");
+		    }
+		    System.out.println("DO YOU WANT TO MAKE ANOTHER PURCHASE?\n[1]YES    [2]NO");
+		    i=algaba.nextInt();
+		}
+		System.out.println("TOTAL PURCHACE:"+total);
+	}
+}
