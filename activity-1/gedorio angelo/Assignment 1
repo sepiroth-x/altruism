@@ -1,0 +1,29 @@
+/**
+* Name: Angelo Gedorii
+* Section: Altruism
+* Year: 4th year
+*/
+
+import java.util.*;
+public class EdenGwapa {       
+  public static void main(String[] args){   
+   Scanner eden = new Scanner (System.in);     
+    int a = 0, b = 0, c = 1, d = 0, average = 0;
+    char cheese; 
+    do{
+        System.out.println("Would you like to enter grades?\nY-yes\nN-no");  
+        System.out.print("--> ");
+        cheese = eden.next().charAt(0);       
+        if((cheese == 'y')||(cheese == 'Y')){ 
+        System.out.print("Enter a grade: "); 
+        a = eden.nextInt();             	                  
+        b += a;          
+        d += c;                 
+       }
+    }while((cheese == 'y')||(cheese == 'Y'));    
+        average=b/d;
+        
+	       System.out.print("\nThe Average Grade is: " +average);
+}
+}
+
