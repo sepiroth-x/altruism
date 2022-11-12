@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+	    int grades = 0, result = 0, choice, i = 0;
+	    
+	    do{
+		    System.out.print("Do you want to enter grade?[1 - Yes/ 2 - No]: ");
+		    choice = scan.nextInt();
+    		    if (choice == 1){
+    		    System.out.print("Enter grade: ");
+    		    grades = scan.nextInt();
+    		    result += grades;
+    		    i++;
+		    }
+		    
+	    }while(choice == 1);
+	    
+	    result = result / i;
+	    System.out.println("Total average: " + result);
+	}   
+}
