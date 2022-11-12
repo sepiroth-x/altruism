@@ -1,0 +1,57 @@
+/**
+* Name: Roselle L. Bascones
+* Section: Altruism
+* Year: 4 Year
+*/
+
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+
+			Scanner console = new Scanner(System.in);
+
+		int input;
+
+		System.out.print("Enter  grades: ");
+		float firstGrades= console.nextFloat();
+		System.out.print("Enter grades: ");
+		float secondGrades = console.nextFloat();
+
+		float sum = firstGrades + secondGrades;
+		float ave = sum/2f;
+
+		System.out.println("Do you want to add your grades?");
+
+		System.out.println(" Press 1 for Yes");
+		System.out.println("Press 2 for No");
+		 input = console.nextInt();
+
+
+		 switch (input) {
+
+		 	case 1: 
+		 	System.out.println("Choose yes");
+		 	while (input==1) {
+
+		 		System.out.print("Enter grade: ");
+		 		float yourGrade= console.nextFloat();
+		 	}
+
+		 	break;
+
+		 	case 2:
+		 	System.out.println("Choose no");
+
+		 	System.out.printf("the average grade " + ave);
+
+		 	break;
+
+		 	default: 
+		 	System.out.println("Just choose your choice (1 for Yes or 2 for No)");
+
+		 }
+
+
+	}
+}
