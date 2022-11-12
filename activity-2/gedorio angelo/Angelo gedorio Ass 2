@@ -1,0 +1,149 @@
+/**
+* Name: Angelo Gedorio
+* Section: Altruism
+* Year: 4th Year
+*/
+
+import java.util.*;
+public class YameteKadusai{ 
+  public static void main(String[] args){   
+   Scanner eden= new Scanner (System.in);     
+    int a=0, b=0, c=0, d=0, e=0, f=0, g=0, h=0, j=0, z=0, w=0, x=0, y=0;
+    int redhorse=0, cobra=0, coke=0, oishi=0, mangJuan=0, nova=0, chicken=0, ramen=0, burgerSteak=0;
+    int ab=0, cd=0, ef=0,gh=0, ij=0, kl=0, mn=0, op=0, qr=0;
+    String[] item = new String[]{" "," "," "," "," "," "," "," "," "};
+    char cheese;   
+        
+        System.out.print("Would you like to order?\nY-yes\nN-no\n--> "); 
+    do{ 
+        cheese = eden.next().charAt(0);       
+        if((cheese == 'y')||(cheese == 'Y')){ 
+        System.out.print("\nFOODS:\t\t   Price\n1-Chicken----------₱30\n2-Ramen------------₱170\n3-Buger steak------₱60\n");
+        System.out.print("\nSNACKS:\t\t   Price\n1-Oishi------------₱8\n2-Mang Juan--------₱8\n3-Nova-------------₱15\n");
+        System.out.print("\nBEVERAGES:\t   Price\n1-Redhorse---------₱55\n2-Cobra------------₱15\n3-Coke-------------₱60\n");
+        System.out.print("\nInput [1-3]\n1-Foods\n2-Snacks\n3-Beverages\n--> "); 
+        x = eden.nextInt();
+        String category =" ";
+        switch(x){
+        case 1: 
+            category = "FOOD";
+        break;
+        case 2:
+        category = "SNACKS"; 
+        break;
+        case 3:
+        category = "BEVERAGES";   
+        y += x;
+        break;
+        default: 
+        System.out.print("select from above list!");
+        break;
+        }           
+        if(category.equals("FOOD")){
+        System.out.print("Choose from the Food Menu: ");
+        w = eden.nextInt();
+        System.out.print("Quantity: ");
+        z = eden.nextInt();
+          switch(w){           
+            case 1:
+            g += z;
+            chicken = 30;
+            mn = chicken*g;  
+            item[0] = ("\nChicken\t----"+g+"------------₱"+mn);
+            break;
+            case 2:
+            j += z;
+            ramen = 170; 
+            op = ramen*j;
+            item[1] = ("\nRamen\t----"+j+"------------₱"+op);
+            break;
+            case 3:
+            h += z;
+            burgerSteak = 60;  
+            qr = burgerSteak*h;  
+            item[2] = ("\nBurger\nSteak\t----"+h+"------------₱"+qr);
+            break;
+            default:
+            System.out.print("Select above list only!");
+            break;
+            }     
+        }
+        if(category.equals("SNACKS")){
+        System.out.print("Choose from the Snacks Menu: ");
+        w = eden.nextInt();
+        System.out.print("Quantity: ");
+        z = eden.nextInt();
+          switch(w){           
+            case 1:
+            e += z;
+            oishi = 8;
+            gh = oishi*g;  
+            item[3] = ("\nCrispy\nPatata\t----"+e+"------------₱"+gh);
+            break;
+            case 2:
+            d += z;
+            mangJuan = 8; 
+            ij = mangJuan*d;
+            item[4] = ("\nMang\nJuan\t----"+d+"------------₱"+ij);
+            break;
+            case 3:
+            f+= z;
+            nova = 15;  
+            kl = nova*f;  
+            item[5] = ("\nPiatos\t----"+f+"------------₱"+kl);
+            break;
+            default:
+            System.out.print("Select above list only!");
+            break;
+            }     
+        }       
+        if(category.equals("BEVERAGES")){
+        System.out.print("Choose from the Beverage Menu: ");
+        w = eden.nextInt();
+        System.out.print("Quantity: ");
+        z = eden.nextInt();
+          switch(w){           
+            case 1:
+            a += z;
+            redhorse = 55;
+            ab = redhorse*a;  
+            item[6] = ("\nKulafu\t----"+a+"------------₱"+ab);
+            break;
+            case 2:
+            b += z;
+            cobra = 15; 
+            cd = cobra*b;
+            item[7] = ("\nSting\t----"+b+"------------₱"+cd);
+            break;
+            case 3:
+            c+= z;
+            coke = 60;  
+            ef = coke*c;  
+            item[8] = ("\nKula\nting\t----"+c+"------------₱"+ef);
+            break;
+            default:
+            System.out.print("Select above list only!");
+            break;
+            }     
+        } 
+        System.out.print("Would you to add more?\nY-yes\nN-no\n--> ");       
+      }
+     }while((cheese == 'y')||(cheese == 'Y'));    
+        System.out.println("\n_______________________________");
+        System.out.print("\nItem\t Quantity\t Total");
+        System.out.println("\n_______________________________\n");
+	       System.out.print(item[0]);
+        System.out.print("\n"+item[1]);
+        System.out.print("\n"+item[2]);
+        System.out.print("\n"+item[3]);
+        System.out.print("\n"+item[4]);
+        System.out.print("\n"+item[5]);
+        System.out.print("\n"+item[6]);
+        System.out.print("\n"+item[7]);
+System.out.print("\n"+item[8]);
+        System.out.println("\n_______________________________\n");
+        System.out.print("Bill---------------------₱"+(mn+op+qr+gh+ij+kl+ab+cd+ef));  
+        System.out.printf("\n\n\n");
+  }
+}
+
