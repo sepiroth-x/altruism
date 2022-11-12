@@ -1,0 +1,211 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {		Scanner myScan=new Scanner(System.in);
+
+		int total=0,item;
+
+		System.out.println("DO YOU WANT AN ORDER?\n[1]YES    [2]NO");
+
+		int i=myScan.nextInt();
+
+		while(i==1){
+
+		    System.out.println("SELECT THE CATEGORIES BELOW:");
+
+		    System.out.println("[1]FOODS\n[2]SNACKS\n[3]DRINKS");
+
+		    int ctgry=myScan.nextInt();  
+
+		    if(ctgry==1){
+
+		        System.out.println("-- SELECT FOODS--");
+
+		        //FOOD CHOICES//
+
+		       System.out.println("[1]CHICKEN:$92");
+
+		       System.out.println("[2]BURGER STEAK: $60");
+
+		       System.out.println("[3]CHICKEN FILLET: $80");
+
+		       System.out.println("[4]SPAGHETTI: $59");
+
+		       System.out.println("[5]GARLIC PEPPER BEEF: $70");		       
+
+		        System.out.println("ENTER ITEM:");
+
+		        item=myScan.nextInt();
+
+		        //FOOD PRICES//
+
+		        if (item==1){
+
+		            System.out.println("YOU SELECTED 1pc CHICKEN");
+
+		            total=total+92;
+
+		            }else if (item==2){
+
+		            System.out.println("YOU SELECTED 1pc BURGER STEAK");
+
+		            total=total+60;
+
+		            }else if (item==3){
+
+		            System.out.println("YOU SELECTED 1pc CHICKEN FILLET");
+
+		            total=total+80;
+
+		            }else if (item==1){
+
+		            System.out.println("YOU SELECTED 1pc SPAGHETTI");
+
+		            total=total+59;
+
+		            }else if (item==5){
+
+		            System.out.println("YOU SELECTED 1pc GARLIC PEPPER BEEF");
+
+		            total=total+70;
+
+		            }else{
+
+		                System.out.println("INVALID KEY");
+
+		            }	        
+
+		    }else if(ctgry==2){
+
+		        System.out.println("--SELECT SNACKS--");
+
+		        //SNACKS CHOICES//
+
+		       System.out.println("[1]BURGER: $50");
+
+		       System.out.println("[2]FRIES: $40");
+
+		       System.out.println("[3]HOTDOG: $30");
+
+		       System.out.println("[4]PIZZA: $55");
+
+		       System.out.println("[5] CASSAVA CAKE: $20");
+
+		        //SNACKS PRICES//
+
+		        System.out.println("ENTER ITEM:");
+
+		        item=myScan.nextInt();
+
+		        if (item==1){
+
+		            System.out.println("YOU SELECTED 1pc BURGER");
+
+		            total=total+50;
+
+		            }else if (item==2){
+
+		            System.out.println("YOU SELECTED 1pc FRIES");
+
+		            total=total+40;
+
+		            }else if (item==3){
+
+		            System.out.println("YOU SELECTED 1pc HOTDOG");
+
+		            total=total+50;
+
+		            }else if (item==4){
+
+		            System.out.println("YOU SELECTED 1pc PIZZA");
+
+		            total=total+55;
+
+		            }else if (item==5){
+
+		            System.out.println("YOU SELECTED 1pc CASSAVA CAKE");
+
+		            total=total+20;
+
+		            }else{
+
+		                System.out.println("INVALID KEY");
+
+		            }
+
+		    }else if(ctgry==3){
+
+		        System.out.println("--SELECT DRINKS--");
+
+		        //DRINKS CHOICES//
+
+		       System.out.println("[1]COCA COLA: $60");
+
+		       System.out.println("[2]SMIRNOFF: $53");
+
+		       System.out.println("[3] C2: $20");
+
+		       System.out.println("[4] VITAMILK: $35");
+
+		       System.out.println("[5]ROYAL: $50");
+
+		       //BEVERAGE PRICES//
+
+		       System.out.println("ENTER ITEM:");
+
+		        item=myScan.nextInt();
+
+		        if (item==1){
+
+		            System.out.println("YOU SELECTED 1pc COCA COLA");
+
+		            total=total+60;
+
+		            }else if (item==2){
+
+		            System.out.println("YOU SELECTED 1pc SMIRNOFF");
+
+		            total=total+53;
+
+		            }else if (item==3){
+
+		            System.out.println("YOU SELECTED 1pc C2");
+
+		            total=total+20;
+
+		            }else if (item==4){
+
+		            System.out.println("YOU SELECTED 1pc VITAMILK");
+
+		            total=total+35;
+
+		            }else if (item==5){
+
+		            System.out.println("YOU SELECTED 1pc ROYAL");
+
+		            total=total+50;
+
+		            }else{
+
+		                System.out.println("INVALID KEY");
+
+		            }
+
+		    }else{
+
+		        System.out.println("INVALID KEY.");
+
+		    }
+
+		    System.out.println("DO YOU WANT TO MAKE ANOTHER ORDER?\n[1]YES    [2]NO");
+
+		    i=myScan.nextInt();
+
+		}
+
+		System.out.println("TOTAL ORDER:"+total);
+
+	}
+
+}
