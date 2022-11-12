@@ -1,0 +1,86 @@
+/**
+* Name: Roselle L. Bascones
+* Section: Altruism
+* Year: 4 Year
+*/
+
+  import java.util.Scanner;
+  public class Main {
+	public static void main(String[] args) {
+   
+  Scanner roselle=new Scanner(System.in);
+int total=0,item;
+
+  System.out.println("DO YOU WANT TO  ORDER?(1=YES    2=NO)");
+int i=roselle.nextInt();
+while(i==1){
+		
+   System.out.println("CHOOSE IN MENU:");
+   System.out.println("1=MEALS\n2=SNACKS\n3=DRINKS");
+int ctgry=roselle.nextInt();
+		    
+	 if(ctgry==1){
+		       
+   System.out.println("CHOOSE IN MEU");
+       //MEAL MENU//
+   System.out.println("1=CHICKEN w/ RICE: $50\n2=STEAM RICE: $15\n3=TOCILOG: $20\n4=SISILOG: $30\n5=BANGSILOG: $25");
+		       
+   System.out.println("YOUR ORDER:");
+   item=roselle.nextInt();
+    //PRICE//
+    if (item==1){
+		        
+   System.out.println("YOU CHOOSE CHICKEN w/ RICE\nYOU CHOOSE TOCILOG\nYOU CHOOSE SISILOG:");
+   total=total+15+20+30;
+   }else if (item==1+3+4){
+		           
+   System.out.println("YOUR MEALS ORDER:");
+   }
+
+  }else if(ctgry==2){
+		     
+   System.out.println("CHOOSE IN MENU");
+  
+  //SNACKS MENU//
+   System.out.println("1=TEMPURA: $10\n2=CRACKERS: $3\n3=BURGER: $8\n4=FRIES: $2\n5=SIOPAO: $6:");
+		       
+   System.out.println("YOUR SNACK ORDER:");
+		     
+   System.out.println("ENTER ITEM:");
+   item=roselle.nextInt();
+   if (item==1){
+
+   System.out.println("YOU CHOOSE TEMPURA\nBURGER\nFRIES:");
+   total=total+10+8+2;
+   }else if (item==2+3+4){
+		     
+   System.out.println("YOUR SNACK ORDER");
+  }
+  
+ }else if(ctgry==3){
+   System.out.println("CHOOSE IN MENU");
+      //DRINKS//
+     System.out.println("1=COKE: $3\n2=ICE TEA: $2\n3=JUICE: $5");
+		       
+    //CHOOSE YOUR DRINKS//
+   System.out.println("ENTER ITEM:");
+   item=roselle.nextInt();
+   if (item==1){
+  
+    System.out.println("YOU CHOOSE COKE\nJUICE:");
+    total=total+3+5;
+    }else if (item==1+3){
+		                
+    System.out.println("YOUR DRINKS:");
+  }
+    }else{
+    System.out.println("SUCESSFULLY ORDER");
+ }
+	
+    System.out.println("IS THERE YOU WANT TO ADD ?\n[1]YES    [2]NO");
+    i=roselle.nextInt();
+  }
+    System.out.println("TOTAL PURCHACE:"+total);
+
+  }
+}
