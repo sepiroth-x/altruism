@@ -1,0 +1,141 @@
+package hardcoding;
+import java.util.Scanner;
+
+public class Main{
+
+  public static void main(String[]args) {
+  
+  Scanner console = new Scanner(System.in);
+  
+  
+  String orderCart = "Your orders are the following: \n";
+  int respondToOrder, orderCategory;
+  float totalPayment = 0, customerCash;
+  
+  System.out.println("==========WELCOME TO KIETH FOODS HOUSE! ========");
+  System.out.println("| DO YOU WANT TO ORDER? [1-YES, 2-NO]            |");
+  System.out.println("| Enter the number for your choice below         |");
+  System.out.println("==================================================");
+  System.out.print  ("Choice:");
+  respondToOrder = console.nextInt(); 
+  
+  do {
+
+  if (respondToOrder == 1) {
+  
+	  System.out.println("==========WELCOME TO KIETH FOODS HOUSE! ========");
+	  System.out.println("|WHAT TO ORDER? [1- MEALS, 2 - MILKTEA , 3- COFFEE");
+	  System.out.println("| Enter the number for your choice below         |");
+	  System.out.println("==================================================");
+	  System.out.print  ("Choice:");
+	  orderCategory = console.nextInt();
+	  
+	  if(orderCategory == 1) {
+	    System.out.println("==========WELCOME TO KIETH FOODS HOUSE! ========");
+	    System.out.println("|***************ORDER MEALS***********************|");
+	    System.out.println("| [1] Burgers			      : P35.00   |");
+	    System.out.println("| [2] Hotdog			      : P60.00   |");
+	    System.out.println("| [3] Kwek-Kwek		              : P45.00   |");
+	    System.out.println("| Enter the number for your choice below         |");
+	    System.out.println("==================================================");
+	    System.out.print  ("Choice:");
+	    float burgers = 35 , hotdog = 60, kwekKwek = 45;
+	    int orderChoice = console.nextInt();
+	    
+	      switch (orderChoice) {
+		case 1: 
+		  System.out.println("Burgers : P35.00 added to cart");
+		  totalPayment+=burgers;
+		  String order1 = "Burgers: P35.00 \n";
+		  orderCart+=order1;
+		  
+		break;
+		
+		case 2: 
+		  System.out.println("Hotdog: P60.00  added to cart");
+		  totalPayment+=hotdog;
+		  String order2 = "Hotdog: P60.00  \n";
+		  orderCart+=order2;
+		break;
+		
+		case 3: 
+		  System.out.println("Kwek-Kwek: P45.00 added to cart");
+		  totalPayment+=kwekKwek;
+		  String order3 = "Kwek-Kwek : P45.00 \n";
+		  orderCart+=order3;
+		  
+		break;
+	      
+	       default:
+		 System.out.println("Enter valid entry only base on the choices above!");
+		 
+	       break;  
+	      
+	      }
+	    
+
+	  } else if(orderCategory == 2) {
+	    System.out.println("==========WELCOME TO KIETH FOODS HOUSE! ========");
+	    System.out.println("|***************ORDER MILK TEA********************|");
+	    System.out.println("| [1] Cake Milk Tea 		     : P120.00    |");
+	    System.out.println("| [2] Cookies and Cream Milk Tea     : P120.00    |");
+	    System.out.println("| [3] Hazelnut Cream Cheese Milk Tea : P120.00    |");
+	    System.out.println("| Enter the number for your choice below          |");
+	    System.out.println("==================================================");
+	    System.out.print  ("Choice:");
+	    
+	    float cakeMilkTea = 120 , cookiesandCreamMilkTea = 120, hazelnutCreamCheeseMilkTea = 120;
+	    int orderChoice = console.nextInt();
+	    
+	      switch (orderChoice) {
+		case 1: 
+		  System.out.println("Cake Milk Tea : P120.00 added to cart");
+		  totalPayment+=cakeMilkTea;
+		  String order1 = "Cake Milk Tea: P120.00 \n";
+		  orderCart+=order1;
+		  
+		break;
+		
+		case 2: 
+		  System.out.println("Cookies and Cream Milk Tea: P120.00 added to cart");
+		  totalPayment+=cookiesandCreamMilkTea;
+		  String order2 = "Cookies and Cream Milk Tea : P120.00 \n";
+		  orderCart+=order2;
+		  
+		break;
+		
+		case 3: 
+		  System.out.println("Hazelnut Cream Cheese Milk Tea: P120.00  added to cart");
+		  totalPayment+= hazelnutCreamCheeseMilkTea;
+		  String order3 = "Hazelnut Cream Cheese Milk Tea: P120.00 \n";
+		  orderCart+=order3;
+		    
+		break;
+		  
+	       default:
+		 System.out.println("Enter valid entry only base on the choices above!");
+	       break;  
+	      
+	      }
+	    
+	    
+	    }
+	    
+	    else if(orderCategory == 3) {
+	    System.out.println("==========WELCOME TO KIETH FOODS HOUSE! ========");
+	    System.out.println("|******************ORDER COFFEE******************|");
+	    System.out.println("| [1] Americano    		    : P110.00    |");
+	    System.out.println("| [2] Iced Macchiato Coffee         : P140.00    |");
+	    System.out.println("| [3] Caramel Iced Coffee           : P150.00    |");
+	    System.out.println("| Enter the number for your choice below         |");
+	    System.out.println("==================================================");
+	    System.out.print  ("Choice:");
+	    
+	    float americano = 110, icedMacchiatoCoffee = 140, caramelIcedCoffee = 150;
+	    int orderChoice = console.nextInt();
+	    
+	      switch (orderChoice) {
+		case 1: 
+		  System.out.println("Americano        : P110.00 added to cart");
+		  totalPayment+=americano;
+		  Stri
